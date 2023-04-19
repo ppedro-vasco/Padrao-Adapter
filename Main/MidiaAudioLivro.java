@@ -1,13 +1,13 @@
 package Adapter;
 
 public class MidiaAudioLivro {
-    private float tamanho;
+    private String nome;
 
-    public float getTamanho() {
-        return tamanho;
+    public String getNome() {
+        return nome;
     }
 
-    public void setTamanho(float tamanho) {
-        this.tamanho = tamanho;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 }

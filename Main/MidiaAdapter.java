@@ -8,24 +8,19 @@ public class MidiaAdapter extends MidiaAudioLivro{
     }
 
     public String recuperarMidia() {
-        if (this.getTamanho() >= 900.0f)
-            midiaLivro.setMidia("Livro com mais de 900 paginas");
+        if (this.getNome() == "audio livro")
+            midiaLivro.setMidia("Livro digital");
         else
-            if (this.getTamanho() >= 500.0f)
-                midiaLivro.setMidia("Livro com mais de 500 paginas");
-            else
-                midiaLivro.setMidia("Livro com menos de 500 paginas");
+            if (this.getNome().equals("livro"))
+                midiaLivro.setMidia("Livro impresso");
         return midiaLivro.getMidia();
     }
 
     public void salvarMidia() {
-        if (midiaLivro.getMidia().equals("Livro com mais de 900 paginas"))
-            this.setTamanho(900.0f);
+        if (midiaLivro.getMidia().equals("Livro digital"))
+            this.setNome("audio livro - mp3");
         else
-        if (midiaLivro.getMidia().equals("Livro com mais de 900 paginas"))
-            this.setTamanho(900.0f);
-        else
-            if (midiaLivro.getMidia().equals("Livro com menos de 500 paginas"));
-                this.setTamanho(499.0f);
+        if (midiaLivro.getMidia().equals("Livro impresso"))
+            this.setNome("livro - impresso");
     }
 }

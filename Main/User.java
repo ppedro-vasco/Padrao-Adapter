@@ -18,7 +18,7 @@ public class User {
         return persistencia.recuperarMidia();
     }
 
-    public float getTamanho(){
-        return persistencia.getTamanho();
+    public String getNome(){
+        return persistencia.getNome();
     }
 }

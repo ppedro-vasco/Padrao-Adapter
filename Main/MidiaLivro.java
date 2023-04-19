@@ -1,15 +1,15 @@
 package Adapter;
 
 public class MidiaLivro implements IMidia{
-        private String titulo;
+        private String nome;
 
         @Override
         public String getMidia() {
-            return this.titulo;
+            return this.nome;
         }
         @Override
-        public void setMidia(String titulo) {
-            this.titulo = titulo;
+        public void setMidia(String nome) {
+            this.nome = nome;
         }
 }
 
